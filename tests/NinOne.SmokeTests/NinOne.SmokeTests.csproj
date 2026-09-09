@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>NinOne.SmokeTests</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\NinOne.Domain\NinOne.Domain.csproj" />
+    <ProjectReference Include="..\..\src\NinOne.Application\NinOne.Application.csproj" />
+    <ProjectReference Include="..\..\src\NinOne.Infrastructure\NinOne.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\src\NinOne.Drivers\NinOne.Drivers.csproj" />
+  </ItemGroup>
+</Project>

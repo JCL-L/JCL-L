@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>NinOne.Infrastructure</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NinOne.Domain\NinOne.Domain.csproj" />
+    <ProjectReference Include="..\NinOne.Application\NinOne.Application.csproj" />
+  </ItemGroup>
+</Project>

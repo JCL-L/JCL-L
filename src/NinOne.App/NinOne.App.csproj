@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>NinOne.App</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NinOne.Domain\NinOne.Domain.csproj" />
+    <ProjectReference Include="..\NinOne.Application\NinOne.Application.csproj" />
+    <ProjectReference Include="..\NinOne.Infrastructure\NinOne.Infrastructure.csproj" />
+    <ProjectReference Include="..\NinOne.Drivers\NinOne.Drivers.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\config\**\*" Link="config\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

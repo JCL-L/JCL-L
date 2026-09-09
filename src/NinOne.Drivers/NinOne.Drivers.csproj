@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>NinOne.Drivers</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NinOne.Domain\NinOne.Domain.csproj" />
+    <ProjectReference Include="..\NinOne.Application\NinOne.Application.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="S7netplus" Version="0.20.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\vendor\ZlgCan\x86\**\*" Link="vendor\ZlgCan\x86\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>
